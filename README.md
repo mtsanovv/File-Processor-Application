@@ -1,5 +1,5 @@
 # File-Processor-Application
-A file processor application with Swing GUI, created for a SAP task, given to students at FCST of TU-Sofia - you can see the task [here](https://github.com/mtsanovv/File-Processor-Application/blob/master/sap_task.png).
+A file processor application with Swing GUI, created for a SAP task, given to students at FCST of TU-Sofia - you can see the task [here](https://github.com/mtsanovv/File-Processor-Application/blob/master/sap_task.png). A demo for the application is available [here](https://www.youtube.com/watch?v=Ft-SkyN-Lc8).
 
 ## Requirements
 - Java 11
