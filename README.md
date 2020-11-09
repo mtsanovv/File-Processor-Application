@@ -13,3 +13,5 @@ A file processor application with Swing GUI, created for a SAP task, given to st
 
 ## Running the jar binary
 - It's as simple as going into the `out/artifacts/FileProcessor_jar` directory and running `java -jar FileProcessor.jar`.
+
+*M. Tsanov, 2020*
