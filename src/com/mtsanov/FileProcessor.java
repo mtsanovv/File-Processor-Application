@@ -347,19 +347,8 @@ public class FileProcessor
 			doc.setDocumentFilter(new IntFilter(1, lineCount));
 			doc = (PlainDocument) swapLine2.getDocument();
 			doc.setDocumentFilter(new IntFilter(1, lineCount));
-		}
-		else
-		{
-			swapLinesLabel.setVisible(false);
-			swapLine1.setVisible(false);
-			swapLinesWithLabel.setVisible(false);
-			swapLine2.setVisible(false);
-			swapLinesButton.setVisible(false);
-		}
 
-		if(lineCount > 0)
-		{
-			//swap words stuff is only meaningful if there's at least 1 line
+			//swap words stuff is only meaningful if there's more than 1 line
 			swapWordFromLabel1.setVisible(true);
 			swapWordLine1.setVisible(true);
 			swapWordWithIndexLabel1.setVisible(true);
@@ -370,15 +359,19 @@ public class FileProcessor
 			swapWordIndex2.setVisible(true);
 			swapWordsButton.setVisible(true);
 			//change swap words filters (only for the lines)
-			PlainDocument doc = (PlainDocument) swapWordLine1.getDocument();
+			doc = (PlainDocument) swapWordLine1.getDocument();
 			doc.setDocumentFilter(new IntFilter(1, lineCount));
 			doc = (PlainDocument) swapWordLine2.getDocument();
 			doc.setDocumentFilter(new IntFilter(1, lineCount));
 			saveFileButton.setVisible(true);
-
 		}
 		else
 		{
+			swapLinesLabel.setVisible(false);
+			swapLine1.setVisible(false);
+			swapLinesWithLabel.setVisible(false);
+			swapLine2.setVisible(false);
+			swapLinesButton.setVisible(false);
 			swapWordFromLabel1.setVisible(false);
 			swapWordLine1.setVisible(false);
 			swapWordWithIndexLabel1.setVisible(false);
