@@ -1,4 +1,4 @@
-package com.mtsanov;
+package com.mtsan.FileProcessorApplication;
 
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;

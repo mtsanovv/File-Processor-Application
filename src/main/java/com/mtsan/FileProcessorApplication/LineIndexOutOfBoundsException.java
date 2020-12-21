@@ -1,4 +1,4 @@
-package com.mtsanov;
+package com.mtsan.FileProcessorApplication;
 
 import java.io.Serializable;
 

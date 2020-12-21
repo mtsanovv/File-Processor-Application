@@ -3,12 +3,12 @@ plugins {
     id 'application'
 }
 
-group 'com.mtsanov'
+group 'com.mtsan'
 version '1.0.1'
 
 apply plugin : "java"
 ext {
-    javaMainClass = "com.mtsanov.FileProcessor"
+    javaMainClass = "com.mtsan.FileProcessorApplication.FileProcessor"
 }
 
 application {
@@ -18,7 +18,7 @@ application {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.mtsanov.FileProcessor'
+                'Main-Class': 'com.mtsan.FileProcessorApplication.FileProcessor'
         )
     }
 }
