@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.mtsanov'
+version '1.0.1'
+
+apply plugin : "java"
+ext {
+    javaMainClass = "com.mtsanov.FileProcessor"
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.mtsanov.FileProcessor'
+        )
+    }
+}
+
+repositories {
+    mavenCentral()
+}
